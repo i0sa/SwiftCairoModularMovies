@@ -40,23 +40,20 @@ class NavigatorImpl: Navigator {
         let cacheDependency = CacheProxy(feature: moviesListFeature)
         let dependencies = DependencyContainer(cache: cacheDependency)
         let moviesListViewController = moviesListFeature.configure(dependencies: dependencies, navigator: self)
-        
-        switch navigationType {
-        case .push:
-            navigationController.pushViewController(moviesListViewController, animated: true)
-        case .root:
-            navigationController.setViewControllers([moviesListViewController], animated: false)
-        }
+        navigateToViewControllerWithType(viewController: moviesListViewController, type: navigationType)
     }
     
     func navigateToMovieDetails(movie: Movie, navigationType: NavigationType) {
         let view = movieDetailsFeature.configure(dependencies: dependencies, navigator: self, movie: movie)
-        
-        switch navigationType {
+        navigateToViewControllerWithType(viewController: view, type: navigationType)
+    }
+    
+    private func navigateToViewControllerWithType(viewController: UIViewController, type: NavigationType) {
+        switch type {
         case .push:
-            navigationController.pushViewController(view, animated: true)
+            navigationController.pushViewController(viewController, animated: true)
         case .root:
-            navigationController.setViewControllers([view], animated: false)
+            navigationController.setViewControllers([viewController], animated: false)
         }
     }
 }
