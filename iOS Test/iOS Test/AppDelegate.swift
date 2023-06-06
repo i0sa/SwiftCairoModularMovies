@@ -9,10 +9,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         let navigationController = UINavigationController()
-        appCoordinator = AppCoordinator(window: window!,
-                                        dependencies: dependencies,
-                                        navigationController: navigationController,
-                                        navigator: NavigatorImpl.init(dependencies: dependencies, navigationController: navigationController))
+        let navigator = NavigatorImpl(dependencies: dependencies, navigationController: navigationController)
+        
+        appCoordinator = AppCoordinator(
+            window: window!,
+            dependencies: dependencies,
+            navigationController: navigationController,
+            navigator: navigator)
         appCoordinator?.start()
 
         return true

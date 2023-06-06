@@ -1,0 +1,17 @@
+{
+  "name": "SwiftCairoCommon",
+  "version": "1.0.0",
+  "summary": "Domain Module for SwiftCairoMovies Project",
+  "homepage": "https://swiftcairo.com",
+  "source": {
+    "git": ".",
+    "tag": "1.0.0"
+  },
+  "authors": {
+    "Osama Gamal": "me@i0sa.com"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "SwiftCairoCommon/**/*.{swift}"
+}

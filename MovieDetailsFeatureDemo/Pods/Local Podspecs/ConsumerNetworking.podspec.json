@@ -1,0 +1,30 @@
+{
+  "name": "ConsumerNetworking",
+  "version": "1.0.0",
+  "summary": "Consumer networking",
+  "homepage": "https://swiftcairo.com",
+  "source": {
+    "git": ".",
+    "tag": "1.0.0"
+  },
+  "authors": {
+    "Osama Gamal": "me@i0sa.com"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "ConsumerNetworking/ConsumerNetworking/**/*.{swift}",
+  "dependencies": {
+    "SwiftCairoCommon": [
+
+    ]
+  },
+  "testspecs": [
+    {
+      "name": "UnitTests",
+      "test_type": "unit",
+      "source_files": "ConsumerNetworking/Tests/**/*",
+      "requires_app_host": true
+    }
+  ]
+}

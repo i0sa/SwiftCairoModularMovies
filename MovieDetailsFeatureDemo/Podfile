@@ -1,0 +1,16 @@
+use_frameworks!
+inhibit_all_warnings!
+platform :ios, '13.0'
+
+def features
+  pod 'MovieDetailsFeature', :path => '../iOS Test/.'
+end
+
+
+target 'MovieDetailsFeatureDemo' do
+  pod 'ConsumerNetworking', :path => '../iOS Test/.', :testspecs => ['UnitTests']
+  pod 'SwiftCairoCommon', :path => '../iOS Test/.'
+  pod 'SwiftCairoDesignSystem', :path => '../iOS Test/.'
+  features
+end
+

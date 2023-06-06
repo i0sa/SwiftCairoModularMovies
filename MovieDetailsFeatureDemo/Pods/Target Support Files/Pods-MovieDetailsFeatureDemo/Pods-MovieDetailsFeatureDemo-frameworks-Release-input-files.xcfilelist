@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-MovieDetailsFeatureDemo/Pods-MovieDetailsFeatureDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ConsumerNetworking/ConsumerNetworking.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/MovieDetailsFeature/MovieDetailsFeature.framework
+${BUILT_PRODUCTS_DIR}/SwiftCairoCommon/SwiftCairoCommon.framework
+${BUILT_PRODUCTS_DIR}/SwiftCairoDesignSystem/SwiftCairoDesignSystem.framework

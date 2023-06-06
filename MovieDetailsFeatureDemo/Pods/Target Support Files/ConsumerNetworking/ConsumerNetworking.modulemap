@@ -1,0 +1,6 @@
+framework module ConsumerNetworking {
+  umbrella header "ConsumerNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

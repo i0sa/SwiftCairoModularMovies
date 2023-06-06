@@ -1,0 +1,6 @@
+framework module SwiftCairoCommon {
+  umbrella header "SwiftCairoCommon-umbrella.h"
+
+  export *
+  module * { export * }
+}

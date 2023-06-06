@@ -1,0 +1,6 @@
+framework module SwiftCairoDesignSystem {
+  umbrella header "SwiftCairoDesignSystem-umbrella.h"
+
+  export *
+  module * { export * }
+}

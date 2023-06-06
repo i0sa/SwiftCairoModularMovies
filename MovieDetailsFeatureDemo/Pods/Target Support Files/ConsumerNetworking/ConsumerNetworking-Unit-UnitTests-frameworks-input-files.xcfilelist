@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/ConsumerNetworking/ConsumerNetworking-Unit-UnitTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ConsumerNetworking/ConsumerNetworking.framework
+${BUILT_PRODUCTS_DIR}/SwiftCairoCommon/SwiftCairoCommon.framework
