@@ -9,7 +9,7 @@ import Foundation
 
 public enum Destination {
     case moviesList
-    case movieDetails
+    case movieDetails(movie: Movie)
 }
 
 public enum NavigationType {

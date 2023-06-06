@@ -10,15 +10,17 @@ import SwiftCairoCommon
 import SwiftUI
 
 public protocol MovieDetailsConfiguratorType: SwiftCairoFeature {
-    func configure(dependencies: DependencyContainerType, navigator: Navigator) -> UIViewController
+    func configure(dependencies: DependencyContainerType, navigator: Navigator, movie: Movie) -> UIViewController
 }
 
 public class MovieDetailsConfigurator: MovieDetailsConfiguratorType {
     public init() { }
     public var featureId: String { return "MovieDetails" }
     
-    public func configure(dependencies: DependencyContainerType, navigator: Navigator) -> UIViewController {
-        let hostController = UIHostingController(rootView: MovieDetailsView())
+    public func configure(dependencies: DependencyContainerType,
+                          navigator: Navigator,
+                          movie: Movie) -> UIViewController {
+        let hostController = UIHostingController(rootView: MovieDetailsView(movie: movie))
         return hostController
     }
 }

@@ -6,15 +6,19 @@
 //
 
 import SwiftUI
+import SwiftCairoCommon
 
 struct MovieDetailsView: View {
+    let movie: Movie
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello, SwiftCairo!")
+        Text("You have selected: \(movie.title)")
     }
 }
 
 struct MovieDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailsView()
+        MovieDetailsView(movie: .init(title: "test", year: 10, poster: "test"))
     }
 }

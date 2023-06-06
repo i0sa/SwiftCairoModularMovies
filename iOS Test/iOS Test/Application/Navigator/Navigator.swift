@@ -22,8 +22,8 @@ class NavigatorImpl: Navigator {
         switch destination {
         case .moviesList:
             navigateToMoviesList(navigationType: type)
-        case .movieDetails:
-            navigateToMovieDetails(navigationType: type)
+        case .movieDetails(let movie):
+            navigateToMovieDetails(movie: movie, navigationType: type)
         }
     }
     
@@ -49,8 +49,8 @@ class NavigatorImpl: Navigator {
         }
     }
     
-    func navigateToMovieDetails(navigationType: NavigationType) {
-        let view = movieDetailsFeature.configure(dependencies: dependencies, navigator: self)
+    func navigateToMovieDetails(movie: Movie, navigationType: NavigationType) {
+        let view = movieDetailsFeature.configure(dependencies: dependencies, navigator: self, movie: movie)
         
         switch navigationType {
         case .push:

@@ -45,7 +45,7 @@ final class MoviesListInteractor: MoviesListSceneBusinessLogic {
     
     func selectMovieAtIndex(index: Int) {
         if let selectedMovie = self.movies?[index] {
-            navigator.navigate(to: .movieDetails, type: .push)
+            navigator.navigate(to: .movieDetails(movie: selectedMovie), type: .push)
         }
     }
 }
