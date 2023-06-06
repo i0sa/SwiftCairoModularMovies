@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		030D83FC29CDB893007174FC /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030D83FB29CDB893007174FC /* DependencyContainer.swift */; };
 		030D83FE29CDBC54007174FC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030D83FD29CDBC54007174FC /* AppCoordinator.swift */; };
+		031D8EFF2A2F97800016251A /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031D8EFE2A2F97800016251A /* Navigator.swift */; };
 		0353288629CF7FCD002F3DD3 /* CacheProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353288529CF7FCD002F3DD3 /* CacheProxy.swift */; };
 		9BA04B5225AE681B00E1EA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA04B5125AE681B00E1EA67 /* AppDelegate.swift */; };
 		9BA04B5B25AE681B00E1EA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA04B5A25AE681B00E1EA67 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		030D83FB29CDB893007174FC /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		030D83FD29CDBC54007174FC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		031D8EFE2A2F97800016251A /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		0353288529CF7FCD002F3DD3 /* CacheProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheProxy.swift; sourceTree = "<group>"; };
 		6C263D2DE96C563076BCDDF8 /* Pods-iOS Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Test.debug.xcconfig"; path = "Target Support Files/Pods-iOS Test/Pods-iOS Test.debug.xcconfig"; sourceTree = "<group>"; };
 		9BA04B4E25AE681B00E1EA67 /* iOS Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,10 +86,19 @@
 		030D83FA29CDB88B007174FC /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				031D8EFD2A2F977A0016251A /* Navigator */,
 				0353288429CF7FB9002F3DD3 /* Dependencies */,
 				030D83FD29CDBC54007174FC /* AppCoordinator.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		031D8EFD2A2F977A0016251A /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				031D8EFE2A2F97800016251A /* Navigator.swift */,
+			);
+			path = Navigator;
 			sourceTree = "<group>";
 		};
 		0353288429CF7FB9002F3DD3 /* Dependencies */ = {
@@ -342,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				030D83FC29CDB893007174FC /* DependencyContainer.swift in Sources */,
+				031D8EFF2A2F97800016251A /* Navigator.swift in Sources */,
 				0353288629CF7FCD002F3DD3 /* CacheProxy.swift in Sources */,
 				030D83FE29CDBC54007174FC /* AppCoordinator.swift in Sources */,
 				9BA04B5225AE681B00E1EA67 /* AppDelegate.swift in Sources */,

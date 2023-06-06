@@ -4,6 +4,7 @@ platform :ios, '13.0'
 
 def features
   pod 'MoviesListFeature', :path => '.', :testspecs => ['UnitTests']
+  pod 'MovieDetailsFeature', :path => '.'
 end
 
 

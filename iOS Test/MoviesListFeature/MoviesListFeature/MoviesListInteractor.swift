@@ -11,15 +11,18 @@ import SwiftCairoCommon
 final class MoviesListInteractor: MoviesListSceneBusinessLogic {
     //MARK: Stored Properties
     let presenter: MoviesListScenePresentationLogic
+    let navigator: Navigator
     let worker: MoviesListWorkerType
     private let maxSelectableMovies: Int
     var selectedMovies: [Movie] = []
     var movies: [Movie]?
     
     init(presenter: MoviesListScenePresentationLogic,
+         navigator: Navigator,
          worker: MoviesListWorkerType,
          maxSelectableMovies: Int = 5) {
         self.presenter = presenter
+        self.navigator = navigator
         self.worker = worker
         self.maxSelectableMovies = maxSelectableMovies
     }
@@ -42,21 +45,7 @@ final class MoviesListInteractor: MoviesListSceneBusinessLogic {
     
     func selectMovieAtIndex(index: Int) {
         if let selectedMovie = self.movies?[index] {
-            if let selectedMovieIndex = selectedMovies.firstIndex(where: { $0 == selectedMovie }) {
-                selectedMovies.remove(at: selectedMovieIndex)
-            } else {
-                guard selectedMovies.count < maxSelectableMovies else { return }
-                selectedMovies.append(selectedMovie)
-            }
-            
-            guard let movies = self.movies else {
-                // Technically at this point, it will not come here, because the block user is in here, is based on checking index existance of selected movie, so movies cannot be nil, unless it was manipulated to nill before this check, there are two possible things to do here:
-                // - Do fatalError here to notify dev team of something is wrong
-                // - Present error to user, and add analytics critical logging of something is wrong, to not to break user experience from fatal crash
-                return
-            }
-            let response = MoviesPresentationResponse.success(.init(movies: movies, selectedMovies: self.selectedMovies))
-            presenter.presentMovies(response)
+            navigator.navigate(to: .movieDetails, type: .push)
         }
     }
 }
