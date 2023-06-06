@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListItemView" customModule="SwiftCairoDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="fjn-up-Zgf" id="MZQ-aF-5dk"/>
+                <outlet property="firstLabel" destination="jqM-ed-DJ1" id="zHN-NT-Qwy"/>
+                <outlet property="imageView" destination="1zL-UC-eKx" id="rjz-4L-SnD"/>
+                <outlet property="secondLabel" destination="qyE-y8-fws" id="jRZ-o8-WDt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="382"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjn-up-Zgf">
+                    <rect key="frame" x="0.0" y="59" width="417" height="289"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1zL-UC-eKx">
+                            <rect key="frame" x="0.0" y="0.0" width="417" height="188"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7Qe-on-9EN">
+                            <rect key="frame" x="10" y="198" width="397" height="81"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqM-ed-DJ1">
+                                    <rect key="frame" x="0.0" y="0.0" width="397" height="40.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyE-y8-fws">
+                                    <rect key="frame" x="0.0" y="40.333333333333314" width="397" height="40.666666666666657"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="7Qe-on-9EN" firstAttribute="top" secondItem="1zL-UC-eKx" secondAttribute="bottom" constant="10" id="1rP-R7-j3D"/>
+                        <constraint firstItem="7Qe-on-9EN" firstAttribute="leading" secondItem="fjn-up-Zgf" secondAttribute="leading" constant="10" id="2Ui-fc-O5c"/>
+                        <constraint firstItem="1zL-UC-eKx" firstAttribute="top" secondItem="fjn-up-Zgf" secondAttribute="top" id="4ZZ-c8-siO"/>
+                        <constraint firstAttribute="trailing" secondItem="7Qe-on-9EN" secondAttribute="trailing" constant="10" id="6mT-fT-bk9"/>
+                        <constraint firstItem="1zL-UC-eKx" firstAttribute="height" secondItem="fjn-up-Zgf" secondAttribute="height" multiplier="0.65" id="7id-3C-fTr"/>
+                        <constraint firstAttribute="trailing" secondItem="1zL-UC-eKx" secondAttribute="trailing" id="CwU-v4-Uwo"/>
+                        <constraint firstAttribute="bottom" secondItem="7Qe-on-9EN" secondAttribute="bottom" constant="10" id="U06-BJ-bFZ"/>
+                        <constraint firstItem="1zL-UC-eKx" firstAttribute="leading" secondItem="fjn-up-Zgf" secondAttribute="leading" id="Uip-CL-YoC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fjn-up-Zgf" secondAttribute="trailing" id="25c-kR-rdA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fjn-up-Zgf" secondAttribute="bottom" id="Jb8-cO-Fby"/>
+                <constraint firstItem="fjn-up-Zgf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="uW4-2Z-3VV"/>
+                <constraint firstItem="fjn-up-Zgf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="yqN-95-fpe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="43.511450381679388" y="-123.94366197183099"/>
+        </view>
+    </objects>
+</document>

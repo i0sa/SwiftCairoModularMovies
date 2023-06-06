@@ -1,0 +1,57 @@
+PODS:
+  - ConsumerNetworking (1.0.0):
+    - SwiftCairoCommon
+  - ConsumerNetworking/UnitTests (1.0.0):
+    - SwiftCairoCommon
+  - Kingfisher (7.7.0)
+  - MoviesListFeature (1.0.0):
+    - SwiftCairoCommon
+    - SwiftCairoDesignSystem
+  - MoviesListFeature/UnitTests (1.0.0):
+    - SwiftCairoCommon
+    - SwiftCairoDesignSystem
+  - SwiftCairoCache (1.0.0):
+    - SwiftCairoCommon
+  - SwiftCairoCache/UnitTests (1.0.0):
+    - SwiftCairoCommon
+  - SwiftCairoCommon (1.0.0)
+  - SwiftCairoDesignSystem (1.0.0):
+    - Kingfisher
+
+DEPENDENCIES:
+  - ConsumerNetworking (from `.`)
+  - ConsumerNetworking/UnitTests (from `.`)
+  - MoviesListFeature (from `.`)
+  - MoviesListFeature/UnitTests (from `.`)
+  - SwiftCairoCache (from `.`)
+  - SwiftCairoCache/UnitTests (from `.`)
+  - SwiftCairoCommon (from `.`)
+  - SwiftCairoDesignSystem (from `.`)
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+
+EXTERNAL SOURCES:
+  ConsumerNetworking:
+    :path: "."
+  MoviesListFeature:
+    :path: "."
+  SwiftCairoCache:
+    :path: "."
+  SwiftCairoCommon:
+    :path: "."
+  SwiftCairoDesignSystem:
+    :path: "."
+
+SPEC CHECKSUMS:
+  ConsumerNetworking: 63f58ea644f11e02c56e217123d793e206351c28
+  Kingfisher: f043ac666dfc96c1f37604f93effb45a7ee3a3e1
+  MoviesListFeature: 1f635a5e9ed0c8403cd1901987d4fe751e5f26c9
+  SwiftCairoCache: 14843ff8d9152ecf4e5dd1a1c052731c17643d7d
+  SwiftCairoCommon: 6b6817f34907a7e95c71cb2f2c71c2b5c7bc794e
+  SwiftCairoDesignSystem: b49633a91b37b0871f2a29cb66319f85e209b20f
+
+PODFILE CHECKSUM: c777d82afae222fed70e8433269f3ca9e2ad222e
+
+COCOAPODS: 1.12.1
