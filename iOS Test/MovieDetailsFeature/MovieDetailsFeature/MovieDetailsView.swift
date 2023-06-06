@@ -13,6 +13,7 @@ struct MovieDetailsView: View {
     
     var body: some View {
         Text("Hello, SwiftCairo!")
+            .font(.title)
         Text("You have selected: \(movie.title)")
     }
 }
