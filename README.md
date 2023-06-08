@@ -27,8 +27,13 @@ This is a session introduced in Swift Cairo meetup in 7th on June 2023, sponsore
 
 **MoviesListFeature**: This is a feature module, it is responsible for fetching and displaying a list of movies. It utilizes the ConsumerNetworking module to make API requests and fetch data, this feature is build with VIP architecture, it also utilizes SwiftCairoDesignSystem for design system components usage, as well as SwiftCairoCommon for consuming use cases and entities, it also utilizes SwiftCairoCache module for caching movies.
 
+**MovieDetailsFeature**: This is a feature module, it is responsible for displaying movie details, using SwiftUI
+
 # DependencyContainer
 As a main app, that is scalable in terms of accepting different features, each feature requires depencencies such as networking, caching, toggles, and so on, this is a container for dependencies
+
+# Navigator
+// To document (feel free to contribute)
 
 # Usage
 ### Introducing new feature
