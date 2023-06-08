@@ -35,6 +35,12 @@ As a main app, that is scalable in terms of accepting different features, each f
 # Navigator
 // To document (feel free to contribute)
 
+# Unit tests
+Each module covers its own unit tests inside it
+
+# Demo apps
+I have provided an example of how can we work in our feature, in isolated Xcode project, with movie details feature, demonstrating how can this feature be compiled alone, while faking dependencies
+
 # Usage
 ### Introducing new feature
 To introduce a new feature
